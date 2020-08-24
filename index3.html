@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <meta http-equiv="refresh" content="2"> -->
+    <style>
+        #white1 {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            margin: 0px;
+            padding: 3px;
+            width: 100%;
+            height: 50px;
+        }
+
+        #grey1 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-color: lightgray;
+            margin: 2px;
+            padding: 3px;
+            width: 100%;
+            height: 200px;
+        }
+
+        #white2 {
+            background-color: white;
+            margin: 2px;
+            padding: 3px;
+            width: 100%;
+            height: 200px;
+        }
+
+        #grey2 {
+            background-color: lightgrey;
+            margin: 2px;
+            padding: 3px;
+            width: 100%;
+            height: 200px;
+        }
+
+        .abc {
+            background-color: purple;
+            margin: 2px;
+            padding: 2px;
+            width: 5%;
+            height: 2px;
+        }
+
+        .xyz {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .xyz>div {
+            background-color: purple;
+            width: 45px;
+            height: 8px;
+            margin: 5px;
+        }
+
+        .circle {
+            background-color: grey;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+        }
+
+        .line {
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .A {
+            background-color: grey;
+            height: 8px;
+            width: 200px;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        .B {
+            background-color: grey;
+            height: 6px;
+            width: 160px;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        .C {
+            background-color: grey;
+            height: 4px;
+            width: 140px;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        .square {
+            background-color: purple;
+            height: 16px;
+            width: 100px;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        .squareupper {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .square1 {
+            background-color: grey;
+            height: 10px;
+            width: 200px;
+        }
+
+        .square2 {
+            background-color: grey;
+            height: 8px;
+            width: 160px;
+            margin: 3px;
+        }
+
+        .squaredown {
+            display: flex;
+            justify-content: center;
+        }
+
+        .rect1 {
+
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 150px;
+            width: 600px;
+            margin: 8px;
+
+        }
+
+        .rect2 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 150px;
+            width: 600px;
+            margin: 8px;
+        }
+
+        .rect3 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 150px;
+            width: 600px;
+            margin: 8px;
+        }
+
+        .littlecir1 {
+            background-color: grey;
+            height: 48px;
+            width: 48px;
+            border-radius: 50%;
+            margin: 12px;
+        }
+
+        .littlesqu1 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin: 3px;
+        }
+
+        .littlesqu11 {
+            background-color: grey;
+            height: 8px;
+            width: 120px;
+            margin: 2px;
+        }
+
+        .littlesqu12 {
+            background-color: grey;
+            height: 10px;
+            width: 150px;
+            margin: 2px;
+        }
+
+        .littlesqu13 {
+            background-color: grey;
+            height: 8px;
+            width: 120px;
+            margin: 2px;
+        }
+
+        .littlepurple1 {
+            background-color: purple;
+            height: 12px;
+            width: 80px;
+            margin: 2px;
+        }
+
+        .littlecir2 {
+            background-color: grey;
+            height: 48px;
+            width: 48px;
+            border-radius: 50%;
+            margin: 12px;
+        }
+
+        .littlesqu2 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin: 3px;
+        }
+
+        .littlesqu21 {
+            background-color: grey;
+            height: 8px;
+            width: 120px;
+            margin: 2px;
+        }
+
+        .littlesqu22 {
+            background-color: grey;
+            height: 10px;
+            width: 150px;
+            margin: 2px;
+        }
+
+        .littlesqu23 {
+            background-color: grey;
+            height: 8px;
+            width: 120px;
+            margin: 2px;
+        }
+
+        .littlepurple2 {
+            background-color: purple;
+            height: 12px;
+            width: 80px;
+            margin: 2px;
+        }
+
+        .littlecir3 {
+            background-color: grey;
+            height: 48px;
+            width: 48px;
+            border-radius: 50%;
+            margin: 12px;
+        }
+
+        .littlesqu3 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin: 3px;
+        }
+
+        .littlesqu31 {
+            background-color: grey;
+            height: 8px;
+            width: 120px;
+            margin: 2px;
+        }
+
+        .littlesqu32 {
+            background-color: grey;
+            height: 10px;
+            width: 150px;
+            margin: 2px;
+        }
+
+        .littlesqu33 {
+            background-color: grey;
+            height: 8px;
+            width: 120px;
+            margin: 2px;
+        }
+
+        .littlepurple3 {
+            background-color: purple;
+            height: 12px;
+            width: 80px;
+            margin: 2px;
+        }
+
+        #grey2 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .div1 {
+            display: flex;
+            justify-content: center;
+            height: 70px;
+            width: 720px;
+            margin: 5px;
+        }
+
+        .div11 {
+            background-color: gray;
+            height: 10px;
+            width: 250px;
+            margin: 10px;
+        }
+
+        .div2 {
+
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            height: 70px;
+            width: 720px;
+            margin: 5px;
+        }
+
+        .div21 {
+            display: flex;
+            height: 50px;
+            width: 350px;
+            margin: 2px;
+        }
+
+        .div22 {
+            display: flex;
+            flex-direction: row;
+            height: 50px;
+            width: 350px;
+            margin: 2px;
+        }
+
+        .div3 {
+
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            height: 70px;
+            width: 720px;
+            margin: 4px;
+        }
+
+        .div31 {
+            display: flex;
+            flex-direction: row;
+            height: 50px;
+            width: 350px;
+            margin: 2px;
+        }
+
+        .div32 {
+            display: flex;
+            flex-direction: row;
+            height: 50px;
+            width: 350px;
+            margin: 2px;
+        }
+
+        .cir1 {
+            background-color: gray;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            margin: 5px;
+        }
+
+        .line41 {
+
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .line411 {
+            background-color: gray;
+            height: 8px;
+            width: 120px;
+            margin: 1px;
+        }
+
+        .line412 {
+            background-color: gray;
+            height: 4px;
+            width: 150px;
+            margin: 1px;
+        }
+
+        .line413 {
+            background-color: gray;
+            height: 4px;
+            width: 200px;
+            margin: 1px;
+        }
+
+        .line414 {
+            background-color: gray;
+            height: 4px;
+            width: 150px;
+            margin: 1px;
+        }
+
+        .cir2 {
+            background-color: gray;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            margin: 5px;
+        }
+
+        .line42 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .line421 {
+            background-color: gray;
+            height: 8px;
+            width: 120px;
+            margin: 1px;
+        }
+
+        .line422 {
+            background-color: gray;
+            height: 4px;
+            width: 150px;
+            margin: 1px;
+        }
+
+        .line423 {
+            background-color: gray;
+            height: 4px;
+            width: 200px;
+            margin: 1px;
+        }
+
+        .line424 {
+            background-color: gray;
+            height: 4px;
+            width: 150px;
+            margin: 1px;
+        }
+
+        .cir3 {
+            background-color: gray;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            margin: 5px;
+        }
+
+        .line43 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .line431 {
+            background-color: gray;
+            height: 8px;
+            width: 120px;
+            margin: 1px;
+        }
+
+        .line432 {
+            background-color: gray;
+            height: 4px;
+            width: 150px;
+            margin: 1px;
+        }
+
+        .line433 {
+            background-color: gray;
+            height: 4px;
+            width: 200px;
+            margin: 1px;
+        }
+
+        .line434 {
+            background-color: gray;
+            height: 4px;
+            width: 150px;
+            margin: 1px;
+        }
+
+        .cir4 {
+            background-color: gray;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            margin: 5px;
+        }
+
+        .line44 {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .line441 {
+            background-color: gray;
+            height: 8px;
+            width: 120px;
+            margin: 1px;
+        }
+
+        .line442 {
+            background-color: gray;
+            height: 4px;
+            width: 150px;
+            margin: 1px;
+        }
+
+        .line443 {
+            background-color: gray;
+            height: 4px;
+            width: 200px;
+            margin: 1px;
+        }
+
+        .line444 {
+            background-color: gray;
+            height: 4px;
+            width: 150px;
+            margin: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="white1">
+        <div class="abc">
+            <div class="sam"></div>
+        </div>
+        <div class="xyz">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div id="grey1">
+        <div class="circle">
+        </div>
+        <div class="line">
+            <div class="A"></div>
+            <div class="B"></div>
+            <div class="C"></div>
+        </div>
+        <div class="square"></div>
+    </div>
+    <div id="white2">
+
+        <div class="squareupper">
+            <div class="square1"></div>
+            <div class="square2"></div>
+        </div>
+
+        <div class="squaredown">
+            <div class="rect1">
+                <div class="littlecir1"></div>
+                <div class="littlesqu1">
+                    <div class="littlesqu11"></div>
+                    <div class="littlesqu12"></div>
+                    <div class="littlesqu13"></div>
+                </div>
+                <div class="littlepurple1"></div>
+            </div>
+            <div class="rect2">
+                <div class="littlecir2"></div>
+                <div class="littlesqu2">
+                    <div class="littlesqu21"></div>
+                    <div class="littlesqu22"></div>
+                    <div class="littlesqu23"></div>
+                </div>
+                <div class="littlepurple2"></div>
+            </div>
+            <div class="rect3">
+                <div class="littlecir3"></div>
+                <div class="littlesqu3">
+                    <div class="littlesqu31"></div>
+                    <div class="littlesqu32"></div>
+                    <div class="littlesqu33"></div>
+                </div>
+                <div class="littlepurple3"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="grey2">
+        <div class="div1">
+            <div class="div11"></div>
+        </div>
+        <div class="div2">
+            <div class="div21">
+                <div class="cir1"></div>
+                <div class="line41">
+                    <div class="line411"></div>
+                    <div class="line412"></div>
+                    <div class="line413"></div>
+                    <div class="line414"></div>
+                </div>
+            </div>
+            <div class="div22">
+                <div class="cir2"></div>
+                <div class="line42">
+                    <div class="line421"></div>
+                    <div class="line422"></div>
+                    <div class="line423"></div>
+                    <div class="line424"></div>
+                </div>
+            </div>
+        </div>
+        <div class="div3">
+            <div class="div31">
+                <div class="cir3"></div>
+                <div class="line43">
+                    <div class="line431"></div>
+                    <div class="line432"></div>
+                    <div class="line433"></div>
+                    <div class="line434"></div>
+                </div>
+            </div>
+            <div class="div32">
+                <div class="cir4"></div>
+                <div class="line43">
+                    <div class="line441"></div>
+                    <div class="line442"></div>
+                    <div class="line443"></div>
+                    <div class="line444"></div>
+                </div>
+            </div>
+
+
+        </div>
+</body>
+
+</html>
