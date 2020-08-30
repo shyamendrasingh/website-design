@@ -1,52 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">   
-<head> 
-    <link rel="stylesheet" href="css/master.css">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>the form</title>
-    <meta http-equiv="refresh" content="3">
+    <title>Drop down menu design </title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <meta http-equiv="refresh" content="2">
 </head>
 <body>
-    <div class="green">
-      <ul>
-          <li>Home</li>
-          <li>Gallery</li>
-          <li>Contacts</li>
-          <li>Services</li>
-      </ul>
-    </div>
-     <div class="blue">
-         <div  style="float:left;" class="ab" ></div>
-         <div style="float: left;" class="cd"></div>
-         <div style="float: left;" class="ef"></div>
-     </div>
+    
+   <div class="menu-bar"> 
+    <ul>
+        <li class="active"> <a href="#"><i class="fa fa-home" ></i>Home
+        </a></li>
+        <li> <a href="#"><i class="fa fa-user"></i>
+            About Us </a>
+        <div class="sub-menu1">
+            <ul>
+                <li> <a href="#">Mission</a></li>
+                <li> <a href="#">Vission</a></li>
+                <li> <a href="#">Team</a></li>
+            </ul>
 
-     <div class="skyblue">
-          <h1>THE FORM</h1>
-    <table class="center"> 
-        <tr>
-         <td>Name:</td> 
-         <td><input type="text" placeholder="Enter your Username"></td>
-        </tr>
-        <tr>
-            <td>Password:</td>
-            <td><input type="password" placeholder="Enter your Password"></td>
-        </tr>
-        <tr>
-            <td>Email:</td>
-            <td><input type="Email" placeholder="Enter your Email"></td>
-        </tr>
-        <tr>
-            <td>SEX:</td>
-            <td><input type="radio" name="gender" value="male">MALE</td>
-            <td><input type="radio" name="gender" value="female">FEMALE</td>
-         </tr>
-    </table>
-    </div>
-    <div class="skyblue1">
+        </div>
+  
+        </li>
+        <li><a href="#"><i class="fa fa-clone"></i>
+            Services</a>
+            <div class="sub-menu1">
+                <ul>
+                    <li class="hover-me"> <a href="#">Web Designing</a> 
+                     
+                        <div class="sub-menu-2">
+                            <ul>
+                                <li> <a href="#">front-end developer</a></li>
+                                <li> <a href="#">back-end developer</a></li>
+                            
+                            </ul>
+                
+                        </div>
 
-    </div>
+                    </li>
+                    <li> <a href="#">Marketing</a>
+                        <div class="sub-menu-2">
+                            <ul>
+                                <li> <a href="#">Social Media</a></li>
+                                <li> <a href="#">Email Marketing</a></li>
+                                <li> <a href="#">SEO</a></li>
+                            
+                            </ul>
+                
+                        </div>
+                    </li>
+                    <li> <a href="#">Mobile App</a>
+                        <div class="sub-menu-2">
+                            <ul>
+                                <li> <a href="#">Andriod APP</a></li>
+                                <li> <a href="#">iOS APP</a></li>
+                                <li> <a href="#">Iconic APP</a></li>
+                                <li> <a href="#">Flutter APP</a></li>
+                                <li> <a href="#">Unity APP</a></li>
+                            
+                            </ul>
+                
+                        </div>
+                    </li>
+                </ul>
+    
+            </div>
+        </li>
+        <li><a href="#"><i class="fa fa-users"></i>
+            Clients</a>
+            <div class="sub-menu1">
+                <ul>
+                    <li> <a href="#">Mission</a></li>
+                    <li> <a href="#">Vission</a></li>
+                    <li> <a href="#">Team</a></li>
+                </ul>
+    
+            </div>
+        </li>
+        <li><a href="#"><i class="fa fa-angellist"></i>
+            Investors</a>
+            <div class="sub-menu1">
+                <ul>
+                    <li> <a href="#">Mission</a></li>
+                    <li> <a href="#">Vission</a></li>
+                    <li> <a href="#">Team</a></li>
+                </ul>
+    
+            </div>
+        </li>
+        <li><a href="#"><i class="fa fa-inr"></i>
+            Pricing</a>
+            <div class="sub-menu1">
+                <ul>
+                    <li> <a href="#">Mission</a></li>
+                    <li> <a href="#">Vission</a></li>
+                    <li> <a href="#">Team</a></li>
+                </ul>
+    
+            </div>
+        </li>
+        <li><a href="#"><i class="fa fa-edit" ></i>
+            Tranning</a>
+            <div class="sub-menu1">
+                <ul>
+                    <li> <a href="#">Mission</a></li>
+                    <li> <a href="#">Vission</a></li>
+                    <li> <a href="#">Team</a></li>
+                </ul>
+    
+            </div>
+        </li>
+        <li><a href="#"><i class="fa fa-phone" ></i>
+            Contacts</a>
+            <div class="sub-menu1">
+                <ul>
+                    <li> <a href="#">Mission</a></li>
+                    <li> <a href="#">Vission</a></li>
+                    <li> <a href="#">Team</a></li>
+                </ul>
+    
+            </div>
+        </li>
+    </ul>
+   </div>
 
 </body>
 </html>
